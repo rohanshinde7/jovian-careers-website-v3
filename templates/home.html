@@ -25,8 +25,12 @@
   Nisi euismod iaculis curabitur justo magna. Neque himenaeos volutpat in justo, hendrerit amet. Lobortis natoque aenean velit lectus eget luctus enim dolor. Aliquet est enim maecenas facilisis accumsan curae. Lacinia sapien nec per at porta sed. Conubia sagittis varius nisi; bibendum eget ex. Vehicula nam himenaeos varius inceptos, tincidunt a.
   </p>
 
-  <h2 class = "text-center mt-2 mb-4" >Open Positions</h2>
-  <p >TODO - Show the jobs here </p>
+    <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+    <div>
+      {% for job in jobs %}
+        {% include 'jobitem.html' %}
+      {% endfor %}
+    </div>
     <div class = "text-center";>
   <button class = "btn btn-primary btn-lg" >Contact us</button>
       <p class = "mt-4">Copyright 2024, Jovian</p>
